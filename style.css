@@ -1,0 +1,110 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 30%;
+    padding: 1px;
+    margin: 5em auto;
+    background-color: rgb(225, 195, 119);
+    height: 30em;
+    border-radius: 1em;
+}
+.login{
+    width: 50%;
+    margin: 10em auto;
+}
+.login input{
+    border: none;
+    width: 100%;
+    height: 2em;
+    font-size: larger;
+}
+.login-button{
+    width: 50%;
+    margin: 0 auto;
+}
+.login-button button{
+    height: 3em;
+    width: 100%;
+    background-color: lightgreen;
+    border-radius: 1em;
+    border-style: none;
+}
+.login-button button:active{
+    height: 3em;
+    width: 100%;
+    background-color: lightseagreen;
+    border-radius: 1em;
+}
+.space{
+    padding: 1em;
+}
+#invalid-pword{
+    padding: 1em;
+    padding-left: 0;
+}
+#invalid-uname{
+    padding: 1em;
+    padding-left: 0;
+}
+.container2{
+    width: 90%;
+}
+.nav{
+    display: flex;
+    gap: 3em;
+    justify-content:space-between;
+}
+#search{
+    height: 2em;
+    margin-left: 40em;
+    width: 50%;
+    background-color: rgba(246, 242, 242, 0.69);
+}
+.next{
+    margin-left: auto;
+}
+.resume{
+    width: 80%;
+    margin: 1em auto;
+    height: 50em;
+    padding: 1px;
+}
+.applicant-name, .applied-position{
+    margin-top: 2em;
+    text-align: center;
+}
+.header{
+    border-bottom: 1px solid black;
+    padding: 1px;
+    background-color: lightgreen;
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+}
+.flex{
+    display: flex;
+}
+.left-panel{
+    width: 25%;
+    background-color: antiquewhite;
+}
+.right-panel{
+    width: 75%;
+    background-color: aliceblue;
+}
+.right-panel div{
+    margin-left:1em
+}
+.right-panel div h3, p, li{
+    margin-left: 4em;
+}
+.left-panel  div.bold{
+    background-color: grey;
+    margin-left: 1em;
+}
+.remove{
+    font-size: 2em;
+    color: grey
+}

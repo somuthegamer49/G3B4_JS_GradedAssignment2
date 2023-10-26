@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="#">
+    <title>Resume</title>
+  </head>
+  <script>
+    if(!JSON.parse(localStorage.getItem('isLoggedIn'))){
+        window.location.href="index.html"
+    }
+  </script>
+  <body>
+    <div class="container2">
+      <div class="nav">
+        <div class="search"><input type="text" id="search" /></div>
+        <div class="next"><button>Next</button></div>
+        <div class="logout"><button>Logout</button></div>
+        <div class="previous"><button>Previous</button></div>
+      </div>
+      <p class="remove">No Data Available</p>
+      <div class="resume">
+        <div class="header">
+          <h1 class="applicant-name"></h1>
+          <p class="applied-position"><strong>Applied For: <span class="applied-for"></span></strong></p>
+        </div>
+        <div class="flex">
+          <div class="left-panel">
+            <div class="bold">
+              <h1>Personal Information</h1>
+            </div>
+            <p><strong>Phone:</strong> <span id="phone"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>LinkedIn:</strong> <span id="url"></span></p>
+            <p><strong>Address:</strong> <span id="address"></span></p>
+            <p><strong>PostalCode:</strong> <span id="postal"></span></p>
+            <p><strong>City:</strong> <span id="city"></span></p>
+            <p><strong>State:</strong> <span id="state"></span></p>
+            <div class="bold">
+                <h1>Technical Skills</h1>
+              </div>
+              <div class="tech">
+                <strong><p id="skill-name">Skill Name</p></strong>
+                <strong><p id="proficiency">Proficiency</p></strong>
+            </div>
+              <div class="bold">
+                <h1>Hobbies</h1>
+              </div>
+              <div class="hobbies">
+            </div>
+            </div>
+            <div class="right-panel">
+                <div>
+                  <h1>Work Experience</h1>
+                  <p><strong>Company Name:</strong> <span  id="company-name"></span></p>
+                  <p><strong>Position:</strong> <span id="position"></span></p>
+                  <p><strong>Start Date:</strong> <span id="start"></span></p>
+                  <p><strong>End Date:</strong> <span id="end"></span></p>
+                  <p>
+                    <strong>Summary:</strong>
+                    <span id="summary"
+                      ></span
+                    >
+                  </p>
+                </div>
+                <div>
+                  <h1>Projects</h1>
+                  <p>
+                    Project Name: <span id="project"></span>
+                    <span id="project-desc"
+                      ></span
+                    >
+                  </p>
+                </div>
+                <div>
+                  <h1>Education</h1>
+                  <ul>
+                    <li>
+                      <p><strong>UG:</strong></p>
+                      <p><span class="education1"></span></p>
+                      <p><span class="education1"></span></p>
+                      <p><span class="education1"></span></p>
+                      <p><span class="education1"></span></p>
+                      <p><span class="education1"></span></p>
+                    </li>
+                    <li>
+                      <p><strong>Senior Secondary:</strong></p>
+                      <p><span class="education2"></span></p>
+                      <p><span class="education2"></span></p>
+                    </li>
+                    <li>
+                      <p><strong>High School:</strong></p>
+                      <p><span class="education3"></span></p>
+                      <p><span class="education3"></span></p>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h1>Internship</h1>
+                  <ul>
+                    <li>
+                      <p><strong>Company Name:</strong> <span id="intern-company"></span></p>
+                    </li>
+                    <li>
+                      <p><strong>Position:</strong> <span id="intern-position"></span></p>
+                    </li>
+                    <li>
+                      <p><strong>Start Date:</strong> <span id="intern-start"></span></p>
+                    </li>
+                    <li>
+                      <p><strong>End Date:</strong> <span id="intern-end"></span></p>
+                    </li>
+                    <li>
+                      <p>
+                        <strong>Summary:</strong>
+                        <span id="summary-desc"
+                          ></span
+                        >
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h1>Achievements</h1>
+                  <ul id="achievements">
+                  </ul>
+                </div>
+              </div>    
+          </div>
+        </div>
+          
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="resume.js"></script>
+</html>

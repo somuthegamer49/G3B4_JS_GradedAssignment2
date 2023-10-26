@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="#">
+    <title>Resume Template</title>
+  </head>
+  <script>
+    if(JSON.parse(localStorage.getItem('isLoggedIn'))){
+        window.location.href="resume.html"
+    }
+  </script>
+  <body>
+    <div class="container">
+      <div class="login">
+        <div class="username">
+          <span id="invalid-uname"></span>
+          <div>
+            <input type="text" name="" id="uname" />
+          </div>
+        </div>
+        <div class="space"></div>
+        <div class="password">
+          <span id="invalid-pword"></span>
+          <div>
+            <input type="text" name="" id="pword" />
+          </div>
+        </div>
+        <div class="space"></div>
+        <div class="login-button">
+          <button id="submit">Login</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="login.js"></script>
+</html>
